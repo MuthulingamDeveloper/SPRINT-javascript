@@ -26,3 +26,10 @@ let checkDead = setInterval(function() {
         document.getElementById('scoreSpan').innerHTML = Math.floor(counter/100);
     }
 }, 10);
+
+
+document.body.onkeyup = function(e){
+    if(e.keyCode == 32|| e.keyCode ==38){
+       jump()
+    }
+}
